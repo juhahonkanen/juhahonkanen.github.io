@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/normalize.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    
+
+    <title>Juha Honkanen</title>
+</head>
+<body id='home'>
+    <div class="page" id="welcome">
+     <!--Navbar-->
+   <nav class="topnav" id="myTopnav" style="background-color:#333";>
+       <h2><a href="#home">Juha Honkanen</a></h2>
+    
+           <a href="#home">Home</a>
+           <a href="#about">About</a>
+           <a href="#services">Services</a>
+           <a href="#contact">Contact</a>
+           <a href="https://www.linkedin.com/in/juha-honkanen/"><span><img src="https://www.iconsdb.com/icons/preview/white/linkedin-xxl.png" alt="linkedin" width="40rem"></span></a>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+   </nav>
+
+   <!--Showcase-->
+   <header id="showcase">
+        <div class="showcase-content">
+            <div class="container">
+                <h1 id="lblGreetings"></h1>
+                <p>Information Networks Student<br>Sales specialist<br>Athlete</span></p>
+                <a href="#about" class="btn">LEARN MORE ABOUT ME</a>
+                <!--img src="img/CV_2.jpg" class="photo" alt="photo of me" height="200px" width="200px"--> 
+            </div>
+        </div>
+
+        <script>
+            var myDate = new Date();
+            var hrs = myDate.getHours();
+            var greet;
+            if (hrs < 12)
+                greet = 'Good Morning';
+            else if (hrs >= 12 && hrs <= 17)
+                greet = 'Good Afternoon';
+            else if (hrs >= 17 && hrs <= 24)
+                greet = 'Good Evening';
+            document.getElementById('lblGreetings').innerHTML =
+                '<b>' + greet + '</b>!';
+        </script> 
+
+   </header>
+
+   <!--Section: About-->
+   <section id="about">
+        <div class="container">
+            <h2 class="aboyt-heading">Get to Know <span class="text-primary">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Little Bit <span class="text-primary">About Myself</span></h3>
+                    <p class="lead">Determined Information Networks student from Aalto
+                        University, a talented salesman and a top athlete. A team
+                        player with a strong problem solving and collaboration
+                        skills.
+                        </p>
+                    <p class="lead">More than ten years of international career in badminton has qualified me in determination, uncompromising work ethic and continuous improvement.
+                        </p>
+                    <p class="lead">Information Networks interdisciplinary studies 
+                        combines industrial engineering and computer science. 
+                        I am aiming to learn as much as I can during my studies so that 
+                        in the future I can take my broad tech/business knowledge and skills 
+                        into action. 
+                    </p>
+                    <p class="lead">I am always looking for new opportunities so if you have anything in mind do not hesitate to <a href="#contact" class="smooth">contact</a> me!
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="img/CV_2.jpg" alt="Juha Honkanen">
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!-- Section: Services -->
+   <section id="services" class="bg-light">
+        <div class="container">
+            <h2>Here is What <span class="text-primary">I Have to Offer</span></h2>
+            <div class="boxes">
+                <div class="box">
+                    <h3><span class="text-primary">IT skills</span></h3>
+                    <p>HTML, CSS <br><br>Scala, Python <br><br>SQL, UML <br><br>Microsoft Office <br><br><a href="work.html">Find out more</a></p>
+                </div>
+                <div class="box">
+                    <h3><span class="text-primary">Sales skills</span></h3>
+                    <p>B2C, F2F <br><br>Team leadership <br><br>Problem solving <br><br>+ 2 years of experience <br><br> <a href="img/Juha Honkanen.pdf" download>Click to see my CV</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  
+
+        <footer class="bg-dark">
+            <section id="contact" class="bg-light"></section>
+            <h2>Contact <span class="text-primary">Me</span></h2>
+            <p>I am always up for a meeting!</p>
+            <div id="contacts">  
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i> Helsinki, Finland<br>
+                    <i class="fa fa-phone"></i> Phone: +358 44 346 7755<br>
+                    <i class="fa fa-envelope"></i> Email: juha.honkanen@hotmail.fi<br>
+                </div>
+                <p>Swing by for a cup of <i class="fa fa-coffee"></i><br><span class="text-primary"> or hit me up at:</span></br></p>
+                <div class="menu">
+                      <a href="https://www.linkedin.com/in/juha-honkanen/">
+                        <span>LinkedIn</span>
+                        <span>
+                            <img src="img/linkedin2.svg" alt="linkedin" width="40rem" aria-hidden="true">
+                        </span>
+                      </a>
+                      <a href="https://www.facebook.com/juha.honkanen.5">
+                        <span>Facebook</span>
+                        <span>
+                            <img src="img/facebook.svg" alt="facebook" width="40rem" aria-hidden="true">
+                        </span>
+                      </a>
+                      <a href="https://www.instagram.com/juha_honkanen/?hl=fi">
+                        <span>Instagram</span>
+                        <span>
+                          <img src="img/instagram.svg" alt="instagram" width="40rem" aria-hidden="true">  
+                        </span>
+                      </a>
+                      <a href="mailto:juha.honkanen@hotmail.fi">
+                        <span>Email</span>
+                        <span>
+                            <img src="img/email.png" alt="email" width="40rem" aria-hidden="true">  
+                        </span>
+                      </a>
+                </div>
+        </footer>
+    </div>
+        <!--jquery CDN-->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+        
+        <!--Local JS File-->
+        <script src="main.js"></script>
+
+</body>
+</html>
