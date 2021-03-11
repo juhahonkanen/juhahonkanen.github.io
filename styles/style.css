@@ -84,7 +84,6 @@ nav{
     text-align: left;
   }
 }
-
 */
 
 .topnav {
@@ -271,6 +270,7 @@ nav{
 
 /* Section  */
 
+
 #about {
   padding: 3rem 0;
   background: linear-gradient(
@@ -295,6 +295,7 @@ nav{
 #about p.lead {
   margin-bottom: 1rem;
   margin-left: 1rem;
+  text-align:left;
 }
 
 #about .about-content {
@@ -304,6 +305,16 @@ nav{
 #about .about-text,
 #about .about-image {
   flex:1;
+  position:relative;
+  margin:0 auto;
+}
+
+#about .about-image img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
 }
 
 #about .about-text {
@@ -316,7 +327,29 @@ nav{
   width: 75%;
   border-radius: 50%;
   margin-top: 0px;
-  border: 2px solid #044794;
+  border: 0px solid #05458d;
+
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:1;
+  }
+  55% {
+    opacity:0;  
+  }
+  100% {
+    opacity:0;
+  }
 }
 
 /* Section Services*/ 
