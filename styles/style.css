@@ -154,7 +154,9 @@ nav{
     float: right;
     display: block;
   }
-  .topnav.responsive {position: sticky;}
+  .topnav.responsive {
+    position: sticky;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -509,6 +511,9 @@ transform:scale(1.1, 1.1);
   .showcase-content h1 {
     margin-top: 5rem;
   }
+  .menu a {
+    font-size: 125%;
+  }
 }
 
 @media screen and (max-width: 340px) {
@@ -527,5 +532,19 @@ transform:scale(1.1, 1.1);
     text-align: center;
     padding: 5.5rem;
     left: 10rem;
+  }
+  .menu a {
+    font-size: 150%;
+  }
+}
+@media screen and (max-width: 280px) {
+  html {
+    width: 200%;
+    height: 200%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .menu a {
+    font-size: 175%;
   }
 }
